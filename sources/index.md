@@ -38,7 +38,7 @@ Keras 兼容的 Python 版本: __Python 2.7-3.6__。
 
 ## 快速开始：30 秒上手 Keras
 
-Keras 的核心数据结构是 __model__，一种组织网络层的方式。最简单的模型是 [`Sequential`](https://keras.io/zh/getting-started/sequential-model-guide) 顺序模型，它是由多个网络层线性堆叠的栈。对于更复杂的结构，你应该使用 [Keras 函数式 API](https://keras.io/zh/getting-started/functional-api-guide)，它允许构建任意的神经网络图。
+Keras 的核心数据结构是 __model__，一种组织网络层的方式。最简单的模型是 [`Sequential`](https://keras.io/zh/getting-started/sequential-model-guide) 顺序模型，它由多个网络层线性堆叠。对于更复杂的结构，你应该使用 [Keras 函数式 API](https://keras.io/zh/getting-started/functional-api-guide)，它允许构建任意的神经网络图。
 
 `Sequential` 顺序模型如下所示：
 
@@ -120,9 +120,9 @@ classes = model.predict(x_test, batch_size=128)
 
 你也可以考虑安装以下**可选依赖**：
 
-- cuDNN (如果你计划在 GPU 上运行 Keras，建议安装)。
-- HDF5 和 h5py (如果你需要将 Keras 模型保存到磁盘，则需要这些)。
-- graphviz 和 pydot (用于[可视化工具](https://keras.io/zh/visualization/)绘制模型图)。
+- [cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/) (如果你计划在 GPU 上运行 Keras，建议安装)。
+- HDF5 和 [h5py](http://docs.h5py.org/en/latest/build.html) (如果你需要将 Keras 模型保存到磁盘，则需要这些)。
+- [graphviz](https://graphviz.gitlab.io/download/) 和 [pydot](https://github.com/erocarrera/pydot) (用于[可视化工具](https://keras.io/zh/visualization/)绘制模型图)。
 
 然后你就可以安装 Keras 本身了。有两种方法安装 Keras：
 
@@ -170,7 +170,7 @@ sudo python setup.py install
 - [Keras Google group](https://groups.google.com/forum/#!forum/keras-users)。
 - [Keras Slack channel](https://kerasteam.slack.com)。 使用 [这个链接](https://keras-slack-autojoin.herokuapp.com/) 向该频道请求邀请函。
 
-你也可以在 [Github issues](https://github.com/keras-team/keras/issues) 中张贴**漏洞报告和新功能请求**（仅限于此）。注意请先阅读 [规范文档](https://github.com/keras-team/keras/blob/master/CONTRIBUTING.md)。
+你也可以在 [Github issues](https://github.com/keras-team/keras/issues) 中发布**漏洞报告和新功能请求**（仅限于此）。注意请先阅读[规范文档](https://github.com/keras-team/keras/blob/master/CONTRIBUTING.md)。
 
 
 ------------------
